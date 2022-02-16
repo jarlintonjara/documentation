@@ -77,12 +77,15 @@ In case your **Webhook Signing Secret** is required to connect with your Stripe 
 create a webhook either automatically or manually.
 
 .. tabs::
-   .. tab:: Create the webhook automatically
+   .. tab:: Manage the webhook automatically
 
       Make sure your :ref:`Publishable and Secret keys <stripe/api_keys>` are filled in, then click
       on the *Generate your Webhook* button.
 
-   .. tab:: Create the webhook manually
+      .. note::
+         To update the webhook, you can click once again on the *Generate your Webhook* button.
+
+   .. tab:: Manage the webhook manually
 
       Visit the `webhooks page on Stripe <https://dashboard.stripe.com/webhooks>`_, or log into your
       Stripe dashboard and go to :menuselection:`Developers --> Webhooks`. Then, click on **Add
@@ -91,14 +94,20 @@ create a webhook either automatically or manually.
       - | In the **Endpoint URL**, enter your Odoo database's URL followed by
         | `/payment/stripe/webhook`.
         | For example: `https://yourcompany.odoo.com/payment/stripe/webhook`
-      - At the end of the form, you can **Select events** to listen to. Click on it and, in the
-        **Checkout** section, select **checkout.session.completed**.
+      - At the end of the form, you can **Select events** to listen to. Click on it. In the
+        **Payment Intent** section, select **payment_intent.amount_capturable_updated** and
+        **payment_intent.succeeded**. In the **Setup Intent** section, select
+        **setup_intent.succeeded**.
 
         .. note::
            It is possible to select other events, but they are currently not processed by Odoo.
 
       When you click on **Add endpoint**, your Webhook is configured. You can then click on
       **reveal** to display your signing secret.
+
+      .. note::
+         You can update an existing webhook by clicking on your webhook. Within the dots on the
+         right side of the address, you can then **Update details**
 
 .. _stripe/local-payment-methods:
 
