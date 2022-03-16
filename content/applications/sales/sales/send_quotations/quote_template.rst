@@ -1,11 +1,10 @@
-=======================
-Use quotation templates
-=======================
+==============================
+Usa plantillas de cotizaciones
+==============================
 
-By creating custom quotation templates, you will save a lot of time. Indeed, with the use of
-templates, you will be able to send complete quotations at a fast pace.
+La creación de cotizaciones mediante plantillas personalizadas, te permite ahorrar mucho tiempo. Por supuesto, con el uso de plantillas, podrá enviar cotizaciones completas a un ritmo acelerado.
 
-Configuration
+Configuración
 =============
 
 To enable this feature, go to :menuselection:`Sales --> Configuration --> Settings` and activate
