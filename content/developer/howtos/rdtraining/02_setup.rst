@@ -1,7 +1,7 @@
 .. _howto/rdtraining/02_setup:
 
 =========================================
-Chapter 2: Development Environment Set-up
+Capítulo 2: Configuración del entorno de desarrollo
 =========================================
 
 There are multiple ways to install Odoo depending on the intended use case.
